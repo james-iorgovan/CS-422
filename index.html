@@ -179,8 +179,8 @@ ul {
 	
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#"><img src="smile.png" alt="User Icon" width="30" height="30">My Profile | Saved Recipes</a>
-        <h3>Ingredients at Home:</h3>
+  <a href="#clients"><i class="fa fa-fw fa-user-circle"></i> My Profile | Saved Recipes</a>
+        <h3>Ingredients at Home</h3>
         
 	<form class="example" action="/action_page.php" style="margin:left;max-width:200px">
   <input type="text" placeholder="Search.." name="search2">
@@ -208,7 +208,7 @@ ul {
         
        <li>
           <label class="container">Checkbox 1
-            <input type="checkbox" checked="checked">
+            <input type="checkbox">
             <span class="checkmark"></span>
           </label>
        </li>
@@ -245,22 +245,78 @@ ul {
   </div>
 </div>
 
-<div class="moveButton">
- <button onclick="myFunction()" style="margin:right">+ Add</button>
-<script>
-function myFunction() {
-  var x = document.createElement("INPUT");
-  x.setAttribute("type", "checkbox");
-  document.body.appendChild(x);
-}
+    
+    
+            <h3>Dietary Restrictions</h3>
+        
+	<form class="example" action="/action_page.php" style="margin:left;max-width:200px">
+  <input type="text" placeholder="Search.." name="search2">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+	<div class = "container">
+  <div class="row">
+    <div class="col-12">
+    
 
-</script>
-	</div>
+
+    </div>
+		
+  </div>
+		
+		<div class="topnav">
+  
 </div>
 
-<h2>Food for Thought</h2>
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  <div class="row">
+		
+    <div class="col-12">
 
+      <ul>
+        
+       <li>
+          <label class="container">Checkbox 1
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+       </li>
+        
+       <li>
+          <label class="container">Checkbox 2
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+       </li>
+        
+       <li>
+          <label class="container">Checkbox 3
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+       </li>
+        
+       <li>
+          <label class="container">Checkbox 4
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+       </li>
+        
+        <li>
+          <label class="container">Checkbox 5
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+       </li>
+       </ul>
+    </div>
+  </div>
+</div>
+
+
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+<img src="logo.png" alt="Logo" width="700" height="300">
 	
 <script>
 function openNav() {
