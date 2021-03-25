@@ -38,7 +38,7 @@ form.example button {
   float: left;
   width: 20%;
   padding: 10px;
-  background: #2196F3;
+  background: #92cf49;
   color: white;
   font-size: 17px;
   border: 1px solid grey;
@@ -47,7 +47,7 @@ form.example button {
 }
 
 form.example button:hover {
-  background: #0b7dda;
+  background: #608c2b;
 }
 
 form.example::after {
@@ -102,7 +102,7 @@ ul {
 
 /* When the checkbox is checked, add a blue background */
 .container input:checked ~ .checkmark {
-  background-color: #c90000;
+  background-color: #92cf49;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
@@ -143,7 +143,7 @@ ul {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #d6d6d6;
+  background-color: #414141;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -153,13 +153,13 @@ ul {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: white;
   display: block;
   transition: 0.3s;
 }
 
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: #608c2b;
 }
 
 .sidenav .closebtn {
@@ -174,20 +174,27 @@ ul {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+
 	
-.div1 {
-  background-color: white;
-  width: 450px;
-  border: 2px solid black;
-  padding: 5px;
-  margin: 5px;
-}    
-    
+	
 .buttonGenerate {
   background-color: #92cf49; 
   border: none;
   color: black;
-  padding: 15px 32px;
+  padding: 20px 70px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 6px 4px;
+  cursor: pointer;
+}     
+    
+.buttonAdd {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 25px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -196,13 +203,67 @@ ul {
   cursor: pointer;
 }    
     
+  	
+.div1 {
+  background-color: #cccccc;
+  width: 450px;
+  border: 2px solid black;
+  padding: 5px;
+  margin: 5px;
+}    
+      
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}   
     
-    
-    
-    
-    
-    
-    
+ .column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+
+.container2 {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 40%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container2:hover .image {
+  opacity: 0.3;
+}
+
+.container2:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}  
     
     
 </style>
@@ -274,6 +335,7 @@ ul {
             <span class="checkmark"></span>
           </label>
        </li>
+				<button class="buttonAdd"><b>+ Add</b></button>
        </ul>
     </div>
   </div>
@@ -342,6 +404,7 @@ ul {
             <span class="checkmark"></span>
           </label>
        </li>
+				<button class="buttonAdd"><b>+ Add</b></button>
        </ul>
     </div>
   </div>
@@ -349,8 +412,9 @@ ul {
 </div>
 
 <div class="div1">
-<label for="times">Cook Time (Optional)</label>
+<label for="times"><b>Cook Time (Optional)</b></label>
 </br>
+	</br>
 <select id="times">
   <option value="5">5 Minutes <</option>
   <option value="15">15 Minutes <</option>
@@ -360,8 +424,6 @@ ul {
 </select>
 </div>
 </br>
-</br>
-</br>
 
 
 <div class="text-center">
@@ -370,20 +432,13 @@ ul {
 </br>
 
 <div class="div1">
-<h3><u>Recipe of the Day</u></h3>
+<h3>Recipe of the Day</h3>
 <p>Test text for coding and stuff...</p>
 </div>
-
-
-
-
-
-
-
 </div>
 
 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-<img src="logo.png" alt="Logo" width="700" height="300">
+<img src="logo.png" alt="Logo" width="700" height="300" class="center">
 	
 <script>
 function openNav() {
@@ -394,6 +449,38 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 </script>
+
+
+
+	<div class="center">
+  <div class="column">
+    <img src="nics.png" alt="Snow" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="nics.png" alt="Forest" style="width:100%">
+
+  </div>
+  <div class="column">
+    <img src="nics.png" alt="Mountains" style="width:100%">
+  </div>
+	  <div class="column">
+    <img src="nics.png" alt="Mountains" style="width:100%">
+  </div>
+	  <div class="column">
+    <img src="nics.png" alt="Mountains" style="width:100%">
+  </div>
+			  <div class="column">
+    <img src="nics.png" alt="Mountains" style="width:100%">
+  </div>
+			  <div class="column">
+    <img src="nics.png" alt="Mountains" style="width:100%">
+  </div>
+			  <div class="column">
+    <img src="nics.png" alt="Mountains" style="width:100%">
+  </div>
+	</div>
+	
+
 
 </body>
 </html> 
