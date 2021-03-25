@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 
+
 .moveButton {
   margin: 0;
   position: absolute;
@@ -129,7 +130,9 @@ ul {
   transform: rotate(45deg);
 }
 
-
+.text-center {
+  text-align: center;
+}
 	
 	
 	
@@ -172,6 +175,36 @@ ul {
   .sidenav a {font-size: 18px;}
 }
 	
+.div1 {
+  background-color: white;
+  width: 450px;
+  border: 2px solid black;
+  padding: 5px;
+  margin: 5px;
+}    
+    
+.buttonGenerate {
+  background-color: #92cf49; 
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 </style>
 </head>
 <body>
@@ -180,13 +213,14 @@ ul {
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="#clients"><i class="fa fa-fw fa-user-circle"></i> My Profile | Saved Recipes</a>
+        <div class="div1">
         <h3>Ingredients at Home</h3>
         
-	<form class="example" action="/action_page.php" style="margin:left;max-width:200px">
+	<form class="example" action="/action_page.php" style="margin:left">
   <input type="text" placeholder="Search.." name="search2">
   <button type="submit"><i class="fa fa-search"></i></button>
 </form>
-	<div class = "container">
+	<div class = "container" >
   <div class="row">
     <div class="col-12">
     
@@ -207,35 +241,35 @@ ul {
       <ul>
         
        <li>
-          <label class="container">Checkbox 1
+          <label class="container">Onions
             <input type="checkbox">
             <span class="checkmark"></span>
           </label>
        </li>
         
        <li>
-          <label class="container">Checkbox 2
+          <label class="container">Tomatoes
             <input type="checkbox">
             <span class="checkmark"></span>
           </label>
        </li>
         
        <li>
-          <label class="container">Checkbox 3
+          <label class="container">Chicken
             <input type="checkbox">
             <span class="checkmark"></span>
           </label>
        </li>
         
        <li>
-          <label class="container">Checkbox 4
+          <label class="container">Carrots
             <input type="checkbox">
             <span class="checkmark"></span>
           </label>
        </li>
         
         <li>
-          <label class="container">Checkbox 5
+          <label class="container">Almonds
             <input type="checkbox">
             <span class="checkmark"></span>
           </label>
@@ -244,12 +278,13 @@ ul {
     </div>
   </div>
 </div>
+</div>
 
     
-    
+      <div class="div1">
             <h3>Dietary Restrictions</h3>
-        
-	<form class="example" action="/action_page.php" style="margin:left;max-width:200px">
+      
+	<form class="example" action="/action_page.php" style="margin:left">
   <input type="text" placeholder="Search.." name="search2">
   <button type="submit"><i class="fa fa-search"></i></button>
 </form>
@@ -274,35 +309,35 @@ ul {
       <ul>
         
        <li>
-          <label class="container">Checkbox 1
+          <label class="container">Vegan
             <input type="checkbox">
             <span class="checkmark"></span>
           </label>
        </li>
         
        <li>
-          <label class="container">Checkbox 2
+          <label class="container">Vegetarian
             <input type="checkbox">
             <span class="checkmark"></span>
           </label>
        </li>
         
        <li>
-          <label class="container">Checkbox 3
+          <label class="container">Nuts
             <input type="checkbox">
             <span class="checkmark"></span>
           </label>
        </li>
         
        <li>
-          <label class="container">Checkbox 4
+          <label class="container">Shellfish
             <input type="checkbox">
             <span class="checkmark"></span>
           </label>
        </li>
         
         <li>
-          <label class="container">Checkbox 5
+          <label class="container">Halal
             <input type="checkbox">
             <span class="checkmark"></span>
           </label>
@@ -311,6 +346,38 @@ ul {
     </div>
   </div>
 </div>
+</div>
+
+<div class="div1">
+<label for="times">Cook Time (Optional)</label>
+</br>
+<select id="times">
+  <option value="5">5 Minutes <</option>
+  <option value="15">15 Minutes <</option>
+  <option value="45">45 Minutes <</option>
+  <option value="1">1 Hour <</option>
+  <option value="2">2 Hour <</option>
+</select>
+</div>
+</br>
+</br>
+</br>
+
+
+<div class="text-center">
+  <button class="buttonGenerate"><b>Generate Recipes</b></button>
+</div>
+</br>
+
+<div class="div1">
+<h3><u>Recipe of the Day</u></h3>
+<p>Test text for coding and stuff...</p>
+</div>
+
+
+
+
+
 
 
 </div>
