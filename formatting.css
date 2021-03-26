@@ -352,3 +352,7 @@ ul {
   font-size: 16px;
   padding: 16px 32px;
 }
+
+button:hover {
+  background: #148700;
+}
