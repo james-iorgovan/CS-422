@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="formatting.css" rel="stylesheet" type="text/css">
+	<link href="index.html" rel="stylesheet">
 </head>
 
 <body>
@@ -13,31 +14,86 @@
     <li></li><button style="height: 50px; width: 50px;"><a href="index.html"><i style="font-size: x-large;" class="w3-jumbo fa fa-home"></i></i></a></button></li>
   </ul>
   <h1 style="text-align: center; padding-top: 80px; font-family: Lucida Console"> Saved Recipes </h1>
+
+<script>
+					function togglePopup(){
+				document.getElementById("popup-1").classList.toggle("active");
+			}
+						function togglePopup(){
+				document.getElementById("popup-2").classList.toggle("active");
+			}
+						function togglePopup(){
+				document.getElementById("popup-3").classList.toggle("active");
+			}
+    </script>
+
+
+<div class="popup" id="popup-1">
+  <div class="overlay"></div>
+  <div class="content">
+    <div class="close-btn" onclick="togglePopup()">&times;</div>
+<h1>Food title</h1>
+    <p>Ingredients: .. .. .. </p>
+			<p> Prep Time: .. .. .. </p>
+		  <p> Cook Time: .. .. .. </p>
+		 <p>  Nutrition: .. .. .. </p>
+  </div>
+</div>
+
+<div class="popup" id="popup-2">
+  <div class="overlay"></div>
+  <div class="content">
+    <div class="close-btn" onclick="togglePopup()">&times;</div>
+<h1>Food title</h1>
+    <p>Ingredients: .. .. .. </p>
+			<p> Prep Time: .. .. .. </p>
+		  <p> Cook Time: .. .. .. </p>
+		 <p>  Nutrition: .. .. .. </p>
+  </div>
+</div>
+
+<div class="popup" id="popup-3">
+  <div class="overlay"></div>
+  <div class="content">
+    <div class="close-btn" onclick="togglePopup()">&times;</div>
+<h1>Food title</h1>
+    <p>Ingredients: .. .. .. </p>
+			<p> Prep Time: .. .. .. </p>
+		  <p> Cook Time: .. .. .. </p>
+		 <p>  Nutrition: .. .. .. </p>
+  </div>
+</div>
+
+
+
   <div class="center" style="padding-top: 100px; padding-left: 150px;">
     <div class="column">
-      <div class="container2">
-        <img src="nics.png" alt="Snow" style="width:100%" class="image">
-        <div class="middle">
-          <div class="text">Read Recipe</div>
+        <div class="container2">
+          <img src="nics.png" alt="Snow" style="width:100%" class="image">
+          <div class="middle">
+            <div class="text">
+						<button1 id="popup-1" onclick="togglePopup()">Read Recipe</button1></div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="column">
-      <div class="container2">
-        <img src="any.png" alt="Snow" style="width:100%" class="image">
-        <div class="middle2">
-          <div class="text">Read Recipe</div>
+      <div class="column">
+        <div class="container2">
+          <img src="any.png" alt="Snow" style="width:100%" class="image">
+          <div class="middle2">
+            <div class="text">
+						<button2 id="popup-2" onclick="togglePopup()">Read Recipe</button2></div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="column">
-      <div class="container2">
-        <img src="ams.png" alt="Snow" style="width:100%" class="image">
-        <div class="middle3">
-          <div class="text">Read Recipe</div>
+      <div class="column">
+        <div class="container2">
+          <img src="ams.png" alt="Snow" style="width:100%" class="image">
+          <div class="middle3">
+            <div class="text">
+						<button3 id="popup-3" onclick="togglePopup()">Read Recipe</button3></div>
+          </div>
         </div>
       </div>
-    </div>
 </body>
 
 </html>
