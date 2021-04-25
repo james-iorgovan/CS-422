@@ -12,12 +12,12 @@
   <! -- Side Bar Menu -->
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="#clients"><i class="fa fa-fw fa-user-circle"></i> My Profile | Saved Recipes</a>
+      <a href="#clients"><i class="fa fa-fw fa-user-circle"></i> My Profile </a><a href="savedrecipes.html">Saved Recipes</a>
       <div class="div1">
         <h3>Ingredients at Home</h3>
         <form class="example" action="/action_page.php" style="margin:left">
-          <input type="text" placeholder="Search.." name="search2">
-          <button type="submit"><i class="fa fa-search"></i></button>
+          <input type="text" placeholder="Search.." name="search2" style="width: 200px; height: 40px">
+          <button type="submit" style="height: 40px; width: 45px;"><i class="fa fa-search" style="text-align: center;"></i></button>
         </form>
         <div class="container">
           <div class="row">
@@ -54,7 +54,7 @@
                     <span class="checkmark"></span>
                   </label>
                 </li>
-                <!-- <button class="buttonAdd"><b>+ Add</b></button> -->
+                <button class="buttonAdd"><b>+ Add</b></button>
               </ul>
             </div>
           </div>
@@ -63,8 +63,8 @@
       <div class="div1">
         <h3>Dietary Restrictions</h3>
         <form class="example" action="/action_page.php" style="margin:left">
-          <input type="text" placeholder="Search.." name="search2">
-          <button type="submit"><i class="fa fa-search"></i></button>
+          <input type="text" placeholder="Search.." name="search2" style="width: 200px; height: 40px">
+          <button type="submit" style="height: 40px; width: 45px;"><i class="fa fa-search" style="text-align: center; display: inline-block; width: 100%;"></i></button>
         </form>
         <div class="container">
           <div class="row">
@@ -101,7 +101,7 @@
                     <span class="checkmark"></span>
                   </label>
                 </li>
-                <!-- <button class="buttonAdd"><b>+ Add</b></button> -->
+                <button class="buttonAdd"><b>+ Add</b></button>
               </ul>
             </div>
           </div>
@@ -112,11 +112,12 @@
         </br>
         </br>
         <select id="times">
-          <option value="5">5 Minutes << /option>
-          <option value="15">15 Minutes << /option>
-          <option value="45">45 Minutes << /option>
-          <option value="1">1 Hour << /option>
-          <option value="2">2 Hour << /option>
+          <option value="0">Any Amount</option>
+          <option value="5">Under 5 Minutes</option>
+          <option value="15">Under 15 Minutes</option>
+          <option value="45">Under 45 Minutes</option>
+          <option value="1">Less than 1 Hour</option>
+          <option value="2">Less than 2 Hours</option>
         </select>
       </div>
       </br>
@@ -130,7 +131,7 @@
       </div>
     </div>
     <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-    <img src="logo.png" alt="Logo" width="600" height="300" class="center">
+    <img src="logo.png" alt="Logo" width="400" height="200" class="center" style="width: auto; max-height: 100%;">
     <script>
       function openNav() {
         document.getElementById("mySidenav").style.width = "477px";
@@ -205,6 +206,3 @@
           </div>
         </div>
       </div>
-</body>
-
-</html>
