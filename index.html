@@ -61,7 +61,7 @@
         </div>
       </div>
       <div class="div1">
-        <h3>Dietary Restrictions</h3>
+        <h3>Dietary Preference</h3>
         <form class="example" action="/action_page.php" style="margin:left">
          <input type="text" placeholder="Search.." name="search2" style="width: 200px; height: 40px">
           <button type="submit" style="height: 40px; width: 45px;"><i class="fa fa-search" style="text-align: center; display: inline-block; width: 100%;"></i></button>
@@ -87,7 +87,7 @@
                   </label>
                 </li>
                 <li>
-                  <label class="container">Nuts <input type="checkbox">
+                  <label class="container">Tree Nut Allergy <input type="checkbox">
                     <span class="checkmark"></span>
                   </label>
                 </li>
@@ -122,7 +122,7 @@
       </div>
       </br>
       <div class="text-center">
-        <button class="buttonGenerate"><b>Generate Recipes</b></button>
+        <button class="buttonGenerate" onclick="ShowImage()"><b>Generate Recipes</b></button>
       </div>
       </br>
       <div class="div1">
@@ -167,6 +167,18 @@
 						function togglePopup(){
 				document.getElementById("popup-8").classList.toggle("active");
 			}
+			
+			
+						function ShowImage(){
+							document.getElementById('image0').style.display='block';
+							document.getElementById('image1').style.display='block';
+							document.getElementById('image2').style.display='block';
+							document.getElementById('image3').style.display='block';
+							document.getElementById('image4').style.display='block';
+							document.getElementById('image5').style.display='block';
+							document.getElementById('image6').style.display='block';
+							document.getElementById('image7').style.display='block';
+						}
     </script>
 
 
@@ -272,72 +284,72 @@
     <div class="center">
       <div class="column">
         <div class="container2">
-          <img src="nics.png" alt="Snow" style="width:100%" class="image">
+          <img src="nics.png" alt="Snow" class="image" id="image0" style="display:none;">
           <div class="middle">
-            <div class="text">
+            <div class="text" id="image0">
 						<button1 id="popup-1" onclick="togglePopup()">Read Recipe</button1></div>
           </div>
         </div>
       </div>
       <div class="column">
         <div class="container2">
-          <img src="any.png" alt="Snow" style="width:100%" class="image">
+          <img src="any.png" alt="Snow" class="image" id="image1" style="display:none;">
           <div class="middle2">
-            <div class="text">
+            <div class="text" id="image1">
 						<button2 id="popup-2" onclick="togglePopup()">Read Recipe</button2></div>
           </div>
         </div>
       </div>
       <div class="column">
         <div class="container2">
-          <img src="ams.png" alt="Snow" style="width:100%" class="image">
+          <img src="ams.png" alt="Snow" class="image" id="image2" style="display:none;">
           <div class="middle3">
-            <div class="text">
+            <div class="text" id="image2">
 						<button3 id="popup-3" onclick="togglePopup()">Read Recipe</button3></div>
           </div>
         </div>
       </div>
       <div class="column">
         <div class="container2">
-          <img src="coco.png" alt="Snow" style="width:100%" class="image">
+          <img src="coco.png" alt="Snow" class="image" id="image3" style="display:none;">
           <div class="middle4">
-            <div class="text">
+            <div class="text" id="image3">
 						<button4 id="popup-4" onclick="togglePopup()">Read Recipe</button4></div>
           </div>
         </div>
       </div>
       <div class="column">
         <div class="container2">
-          <img src="mango.png" alt="Snow" style="width:100%" class="image">
+          <img src="mango.png" alt="Snow" class="image" id="image4" style="display:none;">
           <div class="middle5">
-            <div class="text">
+            <div class="text" id="image4">
 						<button5 id="popup-5" onclick="togglePopup()">Read Recipe</button5></div>
           </div>
         </div>
       </div>
       <div class="column">
         <div class="container2">
-          <img src="wings.png" alt="Snow" style="width:100%" class="image">
+          <img src="wings.png" alt="Snow" class="image" id="image5" style="display:none;">
           <div class="middle6">
-            <div class="text">
+            <div class="text" id="image5">
 						<button6 id="popup-6" onclick="togglePopup()">Read Recipe</button6></div>
           </div>
         </div>
       </div>
       <div class="column">
         <div class="container2">
-          <img src="hils.png" alt="Snow" style="width:100%" class="image">
+          <img src="hils.png" alt="Snow" class="image" id="image6" style="display:none;">
           <div class="middle7">
-            <div class="text">
+            <div class="text" id="image6">
 						<button7 id="popup-7" onclick="togglePopup()">Read Recipe</button7></div>
           </div>
         </div>
       </div>
       <div class="column">
         <div class="container2">
-          <img src="pizza.png" alt="Snow" style="width:100%" class="image">
+          <img src="pizza.png" alt="Snow" class="image" id="image7" style="display:none;">
           <div class="middle8">
-            <div class="text">
+            <div class="text" id="image7">
 						<button8 id="popup-8" onclick="togglePopup()">Read Recipe</button8></div>
           </div>
         </div>

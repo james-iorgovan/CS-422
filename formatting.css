@@ -173,7 +173,7 @@ ul {
   padding: 20px 70px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+/*   display: inline-block; */
   font-size: 20px;
   margin: 6px 4px;
   cursor: pointer;
@@ -215,8 +215,8 @@ ul {
 
 .image {
   opacity: 1;
-  display: block;
-  width: 40%;
+/*   display: block; */
+  width: 100%;
   height: auto;
   transition: .5s ease;
   backface-visibility: hidden;
@@ -553,3 +553,4 @@ button8 {
   background:#fff;
 }
 	   
+
