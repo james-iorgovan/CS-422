@@ -553,4 +553,18 @@ button8 {
   background:#fff;
 }
 	   
-
+.editbtn {
+    align-items: center;
+    background-color: #92cf49;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 290px;
+    width: 150px;
+    height: 60px;
+    font-size: medium;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    margin-top: 90px;
+}
