@@ -1,362 +1,381 @@
+
 <!DOCTYPE html>
 <html>
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="formatting.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="formatting.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-  <! -- Side Bar Menu -->
+    <! -- Side Bar Menu -->
     <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-     <a href="#clients"><i class="fa fa-fw fa-user-circle"></i> My Profile </a><a href="savedrecipes.html">Saved Recipes</a>
-      <div class="div1">
-        <h3>Ingredients at Home</h3>
-        <form class="example" action="/action_page.php" style="margin:left">
-<input type="text" placeholder="Search.." name="search2" style="width: 200px; height: 40px">
-          <button type="submit" style="height: 40px; width: 45px;"><i class="fa fa-search" style="text-align: center;"></i></button>
-        </form>
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="myprofile.html" style="font-size: 25px; padding-left: 10px; text-align: left; font-family: 'Courier New', monospace;"><i class="fa fa-fw fa-user-circle"></i> My Profile </a>
+        <a href="savedrecipes.html" style="font-size: 25px; padding-left: 13px; text-align: left; font-family: 'Courier New', monospace;"><i class="fa fa-floppy-o"></i> Saved Recipes </a>
+        <p style="color: white; text-align: center; font-family: 'Courier New', monospace; font-style:oblique; font-weight: bold;"> Welcome To Food for Thought!</p>
+
+        <div class="div1">
+            <h3 style="font-family: 'Courier New', monospace;">Ingredients at Home</h3>
+            <form class="example" action="/action_page.php" style="margin:left">
+                <input type="text" placeholder="Search.." name="search2" style="width: 200px; height: 40px">
+                <button type="submit" style="height: 40px; width: 45px;"><i class="fa fa-search" style="text-align: center;"></i></button>
+            </form>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                    </div>
+                </div>
+                <div class="topnav">
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <ul>
+                            <li>
+                                <label style="font-family: 'Courier New', monospace;" class="container">Onions <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                            </li>
+                            <li>
+                                <label style="font-family: 'Courier New', monospace;" class="container">Tomatoes <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                            </li>
+                            <li>
+                                <label style="font-family: 'Courier New', monospace;" class="container">Chicken <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                            </li>
+                            <li>
+                                <label style="font-family: 'Courier New', monospace;" class="container">Carrots <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                            </li>
+                            <li>
+                                <label style="font-family: 'Courier New', monospace;" class="container">Almonds <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                            </li>
+                            <button class="buttonAdd" style="width: 105px;"><b>+ Add</b></button>
+                            <button class="buttonAdd" style="text-align: center; background-color:red;"><b>- Remove</b></button>
+                        </ul>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="topnav">
-          </div>
-          <div class="row">
-            <div class="col-12">
-              <ul>
-                <li>
-                  <label class="container">Onions <input type="checkbox">
-                    <span class="checkmark"></span>
-                  </label>
-                </li>
-                <li>
-                  <label class="container">Tomatoes <input type="checkbox">
-                    <span class="checkmark"></span>
-                  </label>
-                </li>
-                <li>
-                  <label class="container">Chicken <input type="checkbox">
-                    <span class="checkmark"></span>
-                  </label>
-                </li>
-                <li>
-                  <label class="container">Carrots <input type="checkbox">
-                    <span class="checkmark"></span>
-                  </label>
-                </li>
-                <li>
-                  <label class="container">Almonds <input type="checkbox">
-                    <span class="checkmark"></span>
-                  </label>
-                </li>
-                <button class="buttonAdd"><b>+ Add</b></button>
-								<button class="buttonAdd" style="background-color:red;"><b>- Remove</b></button>
-              </ul>
-            </div>
-          </div>
         </div>
-      </div>
-      <div class="div1">
-        <h3>Dietary Preference</h3>
-        <form class="example" action="/action_page.php" style="margin:left">
-         <input type="text" placeholder="Search.." name="search2" style="width: 200px; height: 40px">
-          <button type="submit" style="height: 40px; width: 45px;"><i class="fa fa-search" style="text-align: center; display: inline-block; width: 100%;"></i></button>
-        </form>
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
+        <div class="div1">
+            <h3 style="font-family: 'Courier New', monospace;">Dietary Preference</h3>
+            <form class="example" action="/action_page.php" style="margin:left">
+                <input type="text" placeholder="Search.." name="search2" style="width: 200px; height: 40px">
+                <button type="submit" style="height: 40px; width: 45px;"><i class="fa fa-search" style="text-align: center; display: inline-block; width: 100%;"></i></button>
+            </form>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                    </div>
+                </div>
+                <div class="topnav">
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <ul>
+                            <li>
+                                <label style="font-family: 'Courier New', monospace;" class="container">Vegan <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                            </li>
+                            <li>
+                                <label style="font-family: 'Courier New', monospace;" class="container">Vegetarian <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                            </li>
+                            <li>
+                                <label style="font-family: 'Courier New', monospace;" class="container">Tree Nut Allergy <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                            </li>
+                            <li>
+                                <label style="font-family: 'Courier New', monospace;" class="container">Shellfish <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                            </li>
+                            <li>
+                                <label style="font-family: 'Courier New', monospace;" class="container">Halal <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                            </li>
+                            <button class="buttonAdd" style="width: 105px;"><b>+ Add</b></button>
+                            <button class="buttonAdd" style="background-color:red;"><b>- Remove</b></button>
+                        </ul>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="topnav">
-          </div>
-          <div class="row">
-            <div class="col-12">
-              <ul>
-                <li>
-                  <label class="container">Vegan <input type="checkbox">
-                    <span class="checkmark"></span>
-                  </label>
-                </li>
-                <li>
-                  <label class="container">Vegetarian <input type="checkbox">
-                    <span class="checkmark"></span>
-                  </label>
-                </li>
-                <li>
-                  <label class="container">Tree Nut Allergy <input type="checkbox">
-                    <span class="checkmark"></span>
-                  </label>
-                </li>
-                <li>
-                  <label class="container">Shellfish <input type="checkbox">
-                    <span class="checkmark"></span>
-                  </label>
-                </li>
-                <li>
-                  <label class="container">Halal <input type="checkbox">
-                    <span class="checkmark"></span>
-                  </label>
-                </li>
-                <button class="buttonAdd"><b>+ Add</b></button>
-								<button class="buttonAdd" style="background-color:red;"><b>- Remove</b></button>
-              </ul>
-            </div>
-          </div>
         </div>
-      </div>
-      <div class="div1">
-        <label for="times"><b>Cook Time (Optional)</b></label>
+        <div class="div1">
+            <label for="times" style="font-family: 'Courier New', monospace;"><b>Cook Time (Optional)</b></label>
+            </br>
+            </br>
+            <select style="font-family: 'Courier New', monospace;">
+                <option value="0">Any Amount</option>
+                <option value="5">Under 5 Minutes</option>
+                <option value="15">Under 15 Minutes</option>
+                <option value="45">Under 45 Minutes</option>
+                <option value="1">Less than 1 Hour</option>
+                <option value="2">Less than 2 Hours</option>
+            </select>
+        </div>
         </br>
+        <div class="text-center">
+            <button class="buttonGenerate" style="font-family: 'Courier New', monospace;" onclick="ShowImage()"><b>Generate Recipes</b></button>
+        </div>
         </br>
-        <select id="times">
-	          <option value="0">Any Amount</option>
-          <option value="5">Under 5 Minutes</option>
-          <option value="15">Under 15 Minutes</option>
-          <option value="45">Under 45 Minutes</option>
-          <option value="1">Less than 1 Hour</option>
-          <option value="2">Less than 2 Hours</option>
-        </select>
-      </div>
-      </br>
-      <div class="text-center">
-        <button class="buttonGenerate" onclick="ShowImage()"><b>Generate Recipes</b></button>
-      </div>
-      </br>
-      <div class="div1">
-        <h3>Recipe of the Day</h3>
-        <p>Test text for coding and stuff...</p>
-				<img src="tacos.png" alt="Snowie" class="image" style="width:60%">
-      </div>
+        <div class="div1">
+            <h3 style="font-family: 'Courier New', monospace;">Recipe of the Day</h3>
+            <p style="font-family: 'Courier New', monospace;">Today's Most Popular Recipe...</p>
+            <img src="tacos.png" alt="Snowie" class="image" style="text-align: center; width:80%; height: auto; padding-left: 110px;">
+        </div>
     </div>
     <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-    	    <img src="logo.png" alt="Logo" width="400" height="200" class="center" style="width: auto; max-height: 100%;">
+    <img src="logo.png" alt="Logo" class="center" style="width: auto; max-height: 100%; text-align: center;">
     <script>
-      function openNav() {
-        document.getElementById("mySidenav").style.width = "477px";
-      }
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "477px";
+        }
 
-      function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-      }
-			
-			
-			function togglePopup(){
-				document.getElementById("popup-1").classList.toggle("active");
-			}
-			function togglePopup(){
-				document.getElementById("popup-2").classList.toggle("active");
-			}
-						function togglePopup(){
-				document.getElementById("popup-3").classList.toggle("active");
-			}
-			
-						function togglePopup(){
-				document.getElementById("popup-4").classList.toggle("active");
-			}
-						function togglePopup(){
-				document.getElementById("popup-5").classList.toggle("active");
-			}
-						function togglePopup(){
-				document.getElementById("popup-6").classList.toggle("active");
-			}
-						function togglePopup(){
-				document.getElementById("popup-7").classList.toggle("active");
-			}
-						function togglePopup(){
-				document.getElementById("popup-8").classList.toggle("active");
-			}
-			
-			
-						function ShowImage(){
-							document.getElementById('image0').style.display='block';
-							document.getElementById('image1').style.display='block';
-							document.getElementById('image2').style.display='block';
-							document.getElementById('image3').style.display='block';
-							document.getElementById('image4').style.display='block';
-							document.getElementById('image5').style.display='block';
-							document.getElementById('image6').style.display='block';
-							document.getElementById('image7').style.display='block';
-						}
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+
+
+        function togglePopup() {
+            document.getElementById("popup-1").classList.toggle("active");
+        }
+
+        function togglePopup() {
+            document.getElementById("popup-2").classList.toggle("active");
+        }
+
+        function togglePopup() {
+            document.getElementById("popup-3").classList.toggle("active");
+        }
+
+        function togglePopup() {
+            document.getElementById("popup-4").classList.toggle("active");
+        }
+
+        function togglePopup() {
+            document.getElementById("popup-5").classList.toggle("active");
+        }
+
+        function togglePopup() {
+            document.getElementById("popup-6").classList.toggle("active");
+        }
+
+        function togglePopup() {
+            document.getElementById("popup-7").classList.toggle("active");
+        }
+
+        function togglePopup() {
+            document.getElementById("popup-8").classList.toggle("active");
+        }
+
+
+        function ShowImage() {
+            document.getElementById('image0').style.display = 'block';
+            document.getElementById('image1').style.display = 'block';
+            document.getElementById('image2').style.display = 'block';
+            document.getElementById('image3').style.display = 'block';
+            document.getElementById('image4').style.display = 'block';
+            document.getElementById('image5').style.display = 'block';
+            document.getElementById('image6').style.display = 'block';
+            document.getElementById('image7').style.display = 'block';
+        }
     </script>
 
 
-<div class="popup" id="popup-1">
-  <div class="overlay"></div>
-  <div class="content">
-    <div class="close-btn" onclick="togglePopup()">&times;</div>
-<h1>Food title</h1>
-    <p>Ingredients: .. .. .. </p>
-			<p> Prep Time: .. .. .. </p>
-		  <p> Cook Time: .. .. .. </p>
-		 <p>  Nutrition: .. .. .. </p>
-  </div>
-</div>
+    <div class="popup" id="popup-1">
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="close-btn" onclick="togglePopup()">&times;</div>
+            <h1>Food title</h1>
+            <p><i class="fa fa-floppy-o"></i> Save Recipe</p>
+            <p>Ingredients: 1234.. .. .. </p>
+            <p> Prep Time: .. .. .. </p>
+            <p> Cook Time: .. .. .. </p>
+            <p> Nutrition: .. .. .. </p>
+        </div>
+    </div>
 
-<div class="popup" id="popup-2">
-  <div class="overlay"></div>
-  <div class="content">
-    <div class="close-btn" onclick="togglePopup()">&times;</div>
-<h1>Food title</h1>
-    <p>Ingredients: .. .. .. </p>
-			<p> Prep Time: .. .. .. </p>
-		  <p> Cook Time: .. .. .. </p>
-		 <p>  Nutrition: .. .. .. </p>
-  </div>
-</div>
+    <div class="popup" id="popup-2">
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="close-btn" onclick="togglePopup()">&times;</div>
+            <h1>Food title</h1>
+            <p>Ingredients: .. .. .. </p>
+            <p> Prep Time: .. .. .. </p>
+            <p> Cook Time: .. .. .. </p>
+            <p> Nutrition: .. .. .. </p>
+        </div>
+    </div>
 
-<div class="popup" id="popup-3">
-  <div class="overlay"></div>
-  <div class="content">
-    <div class="close-btn" onclick="togglePopup()">&times;</div>
-<h1>Food title</h1>
-    <p>Ingredients: .. .. .. </p>
-			<p> Prep Time: .. .. .. </p>
-		  <p> Cook Time: .. .. .. </p>
-		 <p>  Nutrition: .. .. .. </p>
-  </div>
-</div>
+    <div class="popup" id="popup-3">
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="close-btn" onclick="togglePopup()">&times;</div>
+            <h1>Food title</h1>
+            <p>Ingredients: .. .. .. </p>
+            <p> Prep Time: .. .. .. </p>
+            <p> Cook Time: .. .. .. </p>
+            <p> Nutrition: .. .. .. </p>
+        </div>
+    </div>
 
-<div class="popup" id="popup-4">
-  <div class="overlay"></div>
-  <div class="content">
-    <div class="close-btn" onclick="togglePopup()">&times;</div>
-		 <h1>Food title</h1>
-    <p>Ingredients: .. .. .. </p>
-			<p> Prep Time: .. .. .. </p>
-		  <p> Cook Time: .. .. .. </p>
-		 <p>  Nutrition: .. .. .. </p>
+    <div class="popup" id="popup-4">
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="close-btn" onclick="togglePopup()">&times;</div>
+            <h1>Food title</h1>
+            <p>Ingredients: .. .. .. </p>
+            <p> Prep Time: .. .. .. </p>
+            <p> Cook Time: .. .. .. </p>
+            <p> Nutrition: .. .. .. </p>
 
-  </div>
-</div>
+        </div>
+    </div>
 
-<div class="popup" id="popup-5">
-  <div class="overlay"></div>
-  <div class="content">
-    <div class="close-btn" onclick="togglePopup()">&times;</div>
-<h1>Food title</h1>
-    <p>Ingredients: .. .. .. </p>
-			<p> Prep Time: .. .. .. </p>
-		  <p> Cook Time: .. .. .. </p>
-		 <p>  Nutrition: .. .. .. </p>
-  </div>
-</div>
+    <div class="popup" id="popup-5">
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="close-btn" onclick="togglePopup()">&times;</div>
+            <h1>Food title</h1>
+            <p>Ingredients: .. .. .. </p>
+            <p> Prep Time: .. .. .. </p>
+            <p> Cook Time: .. .. .. </p>
+            <p> Nutrition: .. .. .. </p>
+        </div>
+    </div>
 
-<div class="popup" id="popup-6">
-  <div class="overlay"></div>
-  <div class="content">
-    <div class="close-btn" onclick="togglePopup()">&times;</div>
-<h1>Food title</h1>
-    <p>Ingredients: .. .. .. </p>
-			<p> Prep Time: .. .. .. </p>
-		  <p> Cook Time: .. .. .. </p>
-		 <p>  Nutrition: .. .. .. </p>
-  </div>
-</div>
+    <div class="popup" id="popup-6">
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="close-btn" onclick="togglePopup()">&times;</div>
+            <h1>Food title</h1>
+            <p>Ingredients: .. .. .. </p>
+            <p> Prep Time: .. .. .. </p>
+            <p> Cook Time: .. .. .. </p>
+            <p> Nutrition: .. .. .. </p>
+        </div>
+    </div>
 
-<div class="popup" id="popup-7">
-  <div class="overlay"></div>
-  <div class="content">
-    <div class="close-btn" onclick="togglePopup()">&times;</div>
-<h1>Food title</h1>
-    <p>Ingredients: .. .. .. </p>
-			<p> Prep Time: .. .. .. </p>
-		  <p> Cook Time: .. .. .. </p>
-		 <p>  Nutrition: .. .. .. </p>
-  </div>
-</div>
+    <div class="popup" id="popup-7">
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="close-btn" onclick="togglePopup()">&times;</div>
+            <h1>Food title</h1>
+            <p>Ingredients: .. .. .. </p>
+            <p> Prep Time: .. .. .. </p>
+            <p> Cook Time: .. .. .. </p>
+            <p> Nutrition: .. .. .. </p>
+        </div>
+    </div>
 
-<div class="popup" id="popup-8">
-  <div class="overlay"></div>
-  <div class="content">
-    <div class="close-btn" onclick="togglePopup()">&times;</div>
-<h1>Food title</h1>
-    <p>Ingredients: .. .. .. </p>
-			<p> Prep Time: .. .. .. </p>
-		  <p> Cook Time: .. .. .. </p>
-		 <p>  Nutrition: .. .. .. </p>
-  </div>
-</div>
+    <div class="popup" id="popup-8">
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="close-btn" onclick="togglePopup()">&times;</div>
+            <h1>Food title</h1>
+            <p>Ingredients: .. .. .. </p>
+            <p> Prep Time: .. .. .. </p>
+            <p> Cook Time: .. .. .. </p>
+            <p> Nutrition: .. .. .. </p>
+        </div>
+    </div>
 
 
 
     <div class="center">
-      <div class="column">
-        <div class="container2">
-          <img src="nics.png" alt="Snow" class="image" id="image0" style="display:none;">
-          <div class="middle">
-            <div class="text" id="image0">
-						<button1 id="popup-1" onclick="togglePopup()">Read Recipe</button1></div>
-          </div>
+        <div class="column">
+            <div class="container2">
+                <img src="nics.png" alt="Snow" class="image" id="image0" style="display:none;">
+                <div class="middle">
+                    <div class="text" id="image0">
+                        <button1 id="popup-1" onclick="togglePopup()">Read Recipe</button1>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="column">
-        <div class="container2">
-          <img src="any.png" alt="Snow" class="image" id="image1" style="display:none;">
-          <div class="middle2">
-            <div class="text" id="image1">
-						<button2 id="popup-2" onclick="togglePopup()">Read Recipe</button2></div>
-          </div>
+        <div class="column">
+            <div class="container2">
+                <img src="any.png" alt="Snow" class="image" id="image1" style="display:none;">
+                <div class="middle2">
+                    <div class="text" id="image1">
+                        <button2 id="popup-2" onclick="togglePopup()">Read Recipe</button2>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="column">
-        <div class="container2">
-          <img src="ams.png" alt="Snow" class="image" id="image2" style="display:none;">
-          <div class="middle3">
-            <div class="text" id="image2">
-						<button3 id="popup-3" onclick="togglePopup()">Read Recipe</button3></div>
-          </div>
+        <div class="column">
+            <div class="container2">
+                <img src="ams.png" alt="Snow" class="image" id="image2" style="display:none;">
+                <div class="middle3">
+                    <div class="text" id="image2">
+                        <button3 id="popup-3" onclick="togglePopup()">Read Recipe</button3>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="column">
-        <div class="container2">
-          <img src="coco.png" alt="Snow" class="image" id="image3" style="display:none;">
-          <div class="middle4">
-            <div class="text" id="image3">
-						<button4 id="popup-4" onclick="togglePopup()">Read Recipe</button4></div>
-          </div>
+        <div class="column">
+            <div class="container2">
+                <img src="coco.png" alt="Snow" class="image" id="image3" style="display:none;">
+                <div class="middle4">
+                    <div class="text" id="image3">
+                        <button4 id="popup-4" onclick="togglePopup()">Read Recipe</button4>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="column">
-        <div class="container2">
-          <img src="mango.png" alt="Snow" class="image" id="image4" style="display:none;">
-          <div class="middle5">
-            <div class="text" id="image4">
-						<button5 id="popup-5" onclick="togglePopup()">Read Recipe</button5></div>
-          </div>
+        <div class="column">
+            <div class="container2">
+                <img src="mango.png" alt="Snow" class="image" id="image4" style="display:none;">
+                <div class="middle5">
+                    <div class="text" id="image4">
+                        <button5 id="popup-5" onclick="togglePopup()">Read Recipe</button5>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="column">
-        <div class="container2">
-          <img src="wings.png" alt="Snow" class="image" id="image5" style="display:none;">
-          <div class="middle6">
-            <div class="text" id="image5">
-						<button6 id="popup-6" onclick="togglePopup()">Read Recipe</button6></div>
-          </div>
+        <div class="column">
+            <div class="container2">
+                <img src="wings.png" alt="Snow" class="image" id="image5" style="display:none;">
+                <div class="middle6">
+                    <div class="text" id="image5">
+                        <button6 id="popup-6" onclick="togglePopup()">Read Recipe</button6>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="column">
-        <div class="container2">
-          <img src="hils.png" alt="Snow" class="image" id="image6" style="display:none;">
-          <div class="middle7">
-            <div class="text" id="image6">
-						<button7 id="popup-7" onclick="togglePopup()">Read Recipe</button7></div>
-          </div>
+        <div class="column">
+            <div class="container2">
+                <img src="hils.png" alt="Snow" class="image" id="image6" style="display:none;">
+                <div class="middle7">
+                    <div class="text" id="image6">
+                        <button7 id="popup-7" onclick="togglePopup()">Read Recipe</button7>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="column">
-        <div class="container2">
-          <img src="pizza.png" alt="Snow" class="image" id="image7" style="display:none;">
-          <div class="middle8">
-            <div class="text" id="image7">
-						<button8 id="popup-8" onclick="togglePopup()">Read Recipe</button8></div>
-          </div>
+        <div class="column">
+            <div class="container2">
+                <img src="pizza.png" alt="Snow" class="image" id="image7" style="display:none;">
+                <div class="middle8">
+                    <div class="text" id="image7">
+                        <button8 id="popup-8" onclick="togglePopup()">Read Recipe</button8>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
 </body>
 
 </html>
